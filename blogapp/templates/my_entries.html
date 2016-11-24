@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Entries</title>
+</head>
+<body>
+
+<ul>
+    {% for i in entries %}
+
+            <strong><li> {{ i.0 }} </li></strong><br /><li> {{ i.1 }} </li>
+            <hr />
+    {% endfor %}
+</ul>
+
+</body>
+</html>

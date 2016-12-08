@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +9,29 @@
 </head>
 <body>
 
+{% if request.user.username %}
+    <h1>Welcome {{ request.user.username }}</h1>
+    <a href="/users/logout">Logout</a>
+{% endif %}
+
 <ol>
-    {% for el in todos %}
-        <li> {{ el }} </li>
+    {% for todo in todos %}
+        <li>
+            <h1>{{ todo.name }}</h1>
+            <p>{{ todo.description }}</p>
+        </li>
     {% endfor %}
 </ol>
+
+
+<form method="POST">
+    {% csrf_token %}
+    <input name="todo_name">
+    <input name="description_name">
+
+    <button type="submit">Submit</button>
+</form>
+
 
 </body>
 </html>

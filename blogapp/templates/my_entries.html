@@ -6,13 +6,29 @@
 </head>
 <body>
 
-<ul>
-    {% for i in entries %}
+{% if request.user.username %}
+    <h1>Welcome {{ request.user.username }}</h1>
+    <a href="/users/logout">Logout</a>
+{% endif %}
 
-            <strong><li> {{ i.0 }} </li></strong><br /><li> {{ i.1 }} </li>
-            <hr />
+<ol>
+    {% for entry in entries %}
+        <li>
+            <h1>{{ entry.header }}</h1>
+            <p>{{ entry.body }}</p>
+        </li>
     {% endfor %}
-</ul>
+</ol>
+
+
+<form method="POST">
+    {% csrf_token %}
+    <input name="header_input">
+    <input name="body_input">
+
+    <button type="submit">Submit</button>
+</form>
+
 
 </body>
 </html>

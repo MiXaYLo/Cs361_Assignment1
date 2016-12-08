@@ -1,0 +1,42 @@
+{%load staticfiles%}
+
+<link rel="stylesheet" href="{% static "body.css" %}" />
+
+
+<body>
+<h3>Welcome CS 361 Assignment Home Page</h3>
+
+
+<button onclick="window.location.href='/users/login'">Login</button>
+
+<button onclick="window.location.href='/users/register'">Register</button>
+
+<br>
+<br>
+
+
+Show <a href="/blog/entries">All Entries</a> or go to
+
+ <select name="" form="form1" onchange="location = this.value;">
+    {% for item in list %}
+        <option value="/blog/entries/{{ item.id }}"><a href="/blog/entries/{{ item.id }}">{{ item.header }}</a></option>
+        {% endfor %}
+<br/>
+
+Show <a href="/todo/">All Todos</a> or go to
+
+ <select name="" form="form2" onchange="location = this.value;">
+    {% for item in ls %}
+        <option value="/todos/{{ item.id }}"><a href="/todos/{{ item.id }}">{{ item.name }}</a></option>
+        {% endfor %}
+<br/>
+
+Show <a href="/todos/">All Todos</a> or go to
+
+ <select name="" form="form1" onchange="location = this.value;">
+    {% for item in ls %}
+        <option value="/todos/{{ item.id }}"><a href="/todos/{{ item.id }}">{{ item.name }}</a></option>
+        {% endfor %}
+<br/>
+
+</body>

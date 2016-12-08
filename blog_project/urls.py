@@ -16,11 +16,15 @@ Including another URLconf
 """
 from django.conf.urls import url ,include
 from django.contrib import admin
-from blogapp import urls
+from blog_project.views import index
+
 
 urlpatterns = [
-    #url(r'^admin/', admin.site.urls),
-    url(r'^', include('blogapp.urls')),
-    url(r'^', include('todo.urls')),
+    url(r'^admin/', admin.site.urls),
+    url(r'^$',  index),
+    url(r'^blog/entries/', include('blogapp.urls')),
+    url(r'^todos/', include('todo.urls')),
+    url(r'^users/', include('users.urls')),
+    url(r'^', include('users.urls')),
 
 ]

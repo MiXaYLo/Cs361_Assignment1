@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'blog_project',
     'blogapp',
     'todo',
-    'users'
+    'users',
+    'tags',
 ]
 
 MIDDLEWARE_CLASSES = [

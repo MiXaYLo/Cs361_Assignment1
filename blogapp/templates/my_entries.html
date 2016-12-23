@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Entries</title>
+    <title>All Entries</title>
 </head>
 <body>
 
@@ -16,6 +16,9 @@
         <li>
             <h1>{{ entry.header }}</h1>
             <p>{{ entry.body }}</p>
+            {% for tag in entry.tags.all %}
+                {{ tag.name }}
+            {% endfor  %}
         </li>
     {% endfor %}
 </ol>
@@ -23,8 +26,13 @@
 
 <form method="POST">
     {% csrf_token %}
-    <input name="header_input">
-    <input name="body_input">
+    <input name="header_name">
+    <input name="body_name">
+    <select name="tag_names" multiple>
+        {% for tag in tags %}
+            <option value="{{ tag.id }}" >{{ tag.name }}</option>
+        {% endfor %}
+    </select>
 
     <button type="submit">Submit</button>
 </form>

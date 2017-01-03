@@ -1,8 +1,7 @@
 from django.shortcuts import render_to_response
+
 from blogapp.models import my_entries
 from todo.models import Todo
-
-
 
 
 def index(request):

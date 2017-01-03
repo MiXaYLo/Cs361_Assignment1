@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>All Entries</title>
+    <title>Title</title>
 </head>
 <body>
+
 
 {% if request.user.username %}
     <h1>Welcome {{ request.user.username }}</h1>
@@ -12,13 +13,9 @@
 {% endif %}
 
 <ol>
-    {% for entry in entries %}
+    {% for tag in tags %}
         <li>
-            <h1>{{ entry.header }}</h1>
-            <p>{{ entry.body }}</p>
-            {% for tag in entry.tags.all %}
-                {{ tag.name }}
-            {% endfor  %}
+            <h1>{{ tag.name }}</h1>
         </li>
     {% endfor %}
 </ol>
@@ -26,9 +23,12 @@
 
 <form method="POST">
     {% csrf_token %}
+
     {{ form }}
+
     <button type="submit">Submit</button>
 </form>
+
 
 
 </body>

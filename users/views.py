@@ -12,5 +12,3 @@ def signup(request):
         return HttpResponse("Success!")
 
     return render(request, "register.html")
-
-

@@ -3,5 +3,5 @@ from __future__ import unicode_literals
 from django.apps import AppConfig
 
 
-class blogappConfig(AppConfig):
-    name = 'blogapp'
+class TagsConfig(AppConfig):
+    name = 'tags'

@@ -2,37 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6a5f88c-b74a-4f40-8add-56efcd3245e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogapp/forms.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/migrations/0002_todo_description.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/templates/detailed_todo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/templates/my_todos.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/templates/register.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/templates/registration/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/users/views.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog_project/settings.py" afterPath="$PROJECT_DIR$/blog_project/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog_project/views.py" afterPath="$PROJECT_DIR$/blog_project/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blogapp/apps.py" afterPath="$PROJECT_DIR$/blogapp/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blogapp/models.py" afterPath="$PROJECT_DIR$/blogapp/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blogapp/templates/my_entries.html" afterPath="$PROJECT_DIR$/blogapp/templates/my_entries.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blogapp/views.py" afterPath="$PROJECT_DIR$/blogapp/views.py" />
     </list>
     <ignored path="blog_project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -725,7 +695,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482486001396</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="software assignment 3">
+      <created>1483468107378</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1483468107378</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers>
       <GitHub shared="false" url="https://github.com">
         <option name="assignedIssuesOnly" value="false" />
